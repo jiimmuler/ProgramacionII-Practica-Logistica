@@ -1,9 +1,7 @@
-public class CamionAutonomo extends Vehiculo{
+public abstract class CamionAutonomo extends Vehiculo{
+
     @Override
     public void patronMovimiento() {
-
-    }
-    public void sincronizarGPS(){
-
+        System.out.println("ID: " + getId() + "Arrancando motor y sincronizando ruta con el GPS interno.");
     }
 }
