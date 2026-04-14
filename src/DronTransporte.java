@@ -1,4 +1,7 @@
 public class DronTransporte extends Vehiculo{
+    public DronTransporte(){
+        super();
+    }
     @Override
     public void patronMovimiento() {
         System.out.println("ID: "+getId()+"Dron: Despegando verticalmente en linea recta");
