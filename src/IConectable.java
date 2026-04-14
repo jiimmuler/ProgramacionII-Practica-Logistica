@@ -1,2 +1,2 @@
-public class IConectable {
+public interface IConectable {
 }
