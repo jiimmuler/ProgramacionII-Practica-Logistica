@@ -1,16 +1,23 @@
 import java.util.ArrayList;
 
 public class CentroControl {
-     private ArrayList<Vehiculo> listaDeVehiculos;
+    private ArrayList<Vehiculo> listaVehiculos;
 
-     public CentroControl(){
-         this.listaDeVehiculos = new ArrayList<>();
-     }
+    public CentroControl() {
+        this.listaVehiculos = new ArrayList<>();
+    }
 
-     public void registrarUnidad(Vehiculo v){
+    public void registrarUnidad(Vehiculo v) {
+        listaVehiculos.add(v);
+        System.out.println("Unidad registrada exitosamente. ID: " + v.getId());
+    }
 
-     }
-     public void monitorearFlota(){
+    public void monitorearFlota() {
+        System.out.println("\n   MONITOREO DE FLOTA   ");
+        for (Vehiculo v : listaVehiculos) {
+            v.patronMovimiento();
 
-     }
+            ((IConectable) v).sincronizarGPS();
+        }
+    }
 }
