@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class CentroControl {
+
     private ArrayList<Vehiculo> listaVehiculos;
 
     public CentroControl() {
@@ -16,8 +17,6 @@ public class CentroControl {
         System.out.println("\n   MONITOREO DE FLOTA   ");
         for (Vehiculo v : listaVehiculos) {
             v.patronMovimiento();
-
-            ((IConectable) v).sincronizarGPS();
         }
     }
 }

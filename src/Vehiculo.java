@@ -1,4 +1,5 @@
-public abstract class Vehiculo implements IConectable {
+public abstract class Vehiculo {
+
     private int id;
     private static int nextId=0;
 
